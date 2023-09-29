@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imatges al web - Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: coral;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image-box {
+            width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-box p {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px; 
+        }
+
+        @media (max-width: 600px) {
+            .image-box {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Formats d'imatge</h1>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="images/SmurfCat.png" alt="Imagen 1" class="image">
+            <p>Format: PNG<br>Mida: 618 KB</p>
+        </div>
+        <div class="image-box">
+            <img src="images/SmurfCat.gif" alt="Imagen 2" class="image">
+            <p>Format: GIF<br>Mida: 332 KB</p>
+        </div>
+        <div class="image-box">
+            <img src="images/SmurfCat.jpg" alt="Imagen 3" class="image">
+            <p>Format: JPG<br>Mida: 791 KB</p>
+        </div>
+        <div class="image-box">
+            <img src="images/SmurfCat.webp" alt="Imagen 4" class="image">
+            <p>Format: WEBP<br>Mida: 179 KB</p>
+        </div>
+    </div>
+</body>
+</html>
